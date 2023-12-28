@@ -1,0 +1,173 @@
+.headerContainer {
+    position: relative;
+    background-color: rgb(8, 8, 16);
+    height: 300px;
+    width: 100%;
+}
+
+.navName {
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.nav {
+    position: absolute;
+    left: 200px;
+}
+
+.contentName {
+    position: relative;
+    top: 125px;
+}
+
+.contentName p {
+    color: white;
+    text-align: center;
+}
+
+.imgMain {
+    position: relative;
+    left: 30px;
+}
+
+.bodyContent {
+    position: relative;
+    width: 90%;
+    top: 60px;
+    height: auto;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .bodyContent {
+        width: 100%;
+    }
+
+    .split {
+        position: relative;
+        width: 100%;
+    }
+
+    .leftContent,
+    .rightContent {
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: auto;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    .split {
+        width: 50%;
+    }
+
+    .leftContent,
+    .rightContent {
+        top: 0;
+    }
+}
+
+#buttons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#buttons .socialMediaButtons {
+    margin-right: 5px;
+}
+
+#buttons .socialMediaButtons:last-child {
+    margin-right: 0;
+}
+
+.quoteDiv {
+    position: relative;
+    background-color: rgb(8, 8, 16);
+    margin-top: 10px;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quoteDiv p {
+    color: white;
+    margin: 0;
+}
+
+.separator {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .25em;
+}
+
+#divAwards {
+    margin-top: 40px;
+}
+
+.awardBox {
+    height: auto;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.footerBox {
+    margin-top: 20px;
+    background-color: rgb(8, 8, 16);
+    display: flex;
+    width: 100%;
+}
+
+.footercolumn {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    border-right: 1px solid #ccc;
+}
+
+.footercolumn:last-child {
+    border-right: none;
+}
+
+@media (max-width: 768px) {
+    .footerBox {
+        flex-direction: column;
+    }
+
+    .footercolumn {
+        border-right: none;
+    }
+}
+
+.footerContent{
+    background-color: rgb(8, 8, 16);
+
+}
