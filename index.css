@@ -38,6 +38,13 @@
     height: auto;
     margin: auto;
 }
+.summaryContent {
+    position: relative;
+    width: 90%;
+    top: 20px;
+    height: auto;
+    margin: auto;
+}
 
 @media (max-width: 768px) {
     .bodyContent {
@@ -71,7 +78,9 @@
 }
 
 #buttons {
+    
     position: relative;
+    margin-top: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,7 +140,7 @@
 }
 
 .awardBox {
-    height: auto;
+    height: 150px;
     border: 1px solid #000;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -139,10 +148,10 @@
 }
 
 .footerBox {
+
     margin-top: 20px;
     background-color: rgb(8, 8, 16);
     display: flex;
-    width: 100%;
 }
 
 .footercolumn {
@@ -165,7 +174,23 @@
     .footercolumn {
         border-right: none;
     }
+   
 }
+
+@media(max-width: 767px){
+    .awardBox{
+        height: auto;
+    }
+}
+
+@media(max-width: 1400px) and (min-width: 992px){
+    .awardBox{
+        height: 200px;
+    }
+}
+
+
+
 
 .footerContent{
     background-color: rgb(8, 8, 16);
